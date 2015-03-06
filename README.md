@@ -18,12 +18,14 @@
 
 # Phase 1
 
-* Setup
-  * Player info
-* Basic console views
+* Basic framework
+  * Setup
+  * Rounds - player 1, player 2, repeat
+  * Endgame
 * Basic rule set
   * Standardize fleets
   * Single attack
+* Basic console views
 * Save/Load
 
 ![right](http://beust.com/pics/ksp.png)
