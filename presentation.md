@@ -2,6 +2,8 @@
 
 ## Will Fisher<br>Dylan Tucker
 
+### CS372 Spring 2015
+
 ![](http://savepic.net/4517363.png)
 
 ---
@@ -48,8 +50,10 @@
 
 # Phase 3
 
+* Game replays
 * Tournament Mode
 * GUI
 * Network play
+* PvE
 
 ![right](http://awesome.redial.net/KSP%20-%20More%20boosters.png)
