@@ -38,8 +38,9 @@
 * Custom ships
 * Custom fleet (point buy system)
 * Custom rule sets
-  * Multiple attacks/actions depending on fleet size
+  * "Salvo rules" - Multiple attacks/actions depending on fleet size
   * Different types of attack
+  * etc...
 
 ![right](http://i.imgur.com/fN9KZ.jpg)
 
