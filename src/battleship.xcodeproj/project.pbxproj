@@ -8,10 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A3B1B8671AAA4C3B001BD9D9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3B1B8661AAA4C3B001BD9D9 /* main.cpp */; };
+		A3B1B8741AAA600D001BD9D9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3B1B8731AAA600D001BD9D9 /* main.cpp */; };
+		A3B1B87A1AAA60DC001BD9D9 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3B1B8781AAA60DC001BD9D9 /* game.cpp */; };
+		A3B1B8831AAA6FD5001BD9D9 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3B1B8781AAA60DC001BD9D9 /* game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A3B1B8611AAA4C3B001BD9D9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A3B1B86F1AAA600D001BD9D9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +37,21 @@
 /* Begin PBXFileReference section */
 		A3B1B8631AAA4C3B001BD9D9 /* battleship */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = battleship; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B1B8661AAA4C3B001BD9D9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A3B1B8711AAA600D001BD9D9 /* battleship-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "battleship-test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B1B8731AAA600D001BD9D9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A3B1B8781AAA60DC001BD9D9 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		A3B1B8791AAA60DC001BD9D9 /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A3B1B8601AAA4C3B001BD9D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B1B86E1AAA600D001BD9D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A3B1B8651AAA4C3B001BD9D9 /* battleship */,
+				A3B1B8721AAA600D001BD9D9 /* battleship-test */,
 				A3B1B8641AAA4C3B001BD9D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				A3B1B8631AAA4C3B001BD9D9 /* battleship */,
+				A3B1B8711AAA600D001BD9D9 /* battleship-test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +83,18 @@
 			isa = PBXGroup;
 			children = (
 				A3B1B8661AAA4C3B001BD9D9 /* main.cpp */,
+				A3B1B8781AAA60DC001BD9D9 /* game.cpp */,
+				A3B1B8791AAA60DC001BD9D9 /* game.h */,
 			);
 			path = battleship;
+			sourceTree = "<group>";
+		};
+		A3B1B8721AAA600D001BD9D9 /* battleship-test */ = {
+			isa = PBXGroup;
+			children = (
+				A3B1B8731AAA600D001BD9D9 /* main.cpp */,
+			);
+			path = "battleship-test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +117,23 @@
 			productReference = A3B1B8631AAA4C3B001BD9D9 /* battleship */;
 			productType = "com.apple.product-type.tool";
 		};
+		A3B1B8701AAA600D001BD9D9 /* battleship-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B1B8751AAA600D001BD9D9 /* Build configuration list for PBXNativeTarget "battleship-test" */;
+			buildPhases = (
+				A3B1B86D1AAA600D001BD9D9 /* Sources */,
+				A3B1B86E1AAA600D001BD9D9 /* Frameworks */,
+				A3B1B86F1AAA600D001BD9D9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "battleship-test";
+			productName = "battleship-test";
+			productReference = A3B1B8711AAA600D001BD9D9 /* battleship-test */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +144,9 @@
 				ORGANIZATIONNAME = "Will Fisher";
 				TargetAttributes = {
 					A3B1B8621AAA4C3B001BD9D9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A3B1B8701AAA600D001BD9D9 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
@@ -109,6 +164,7 @@
 			projectRoot = "";
 			targets = (
 				A3B1B8621AAA4C3B001BD9D9 /* battleship */,
+				A3B1B8701AAA600D001BD9D9 /* battleship-test */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +175,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3B1B8671AAA4C3B001BD9D9 /* main.cpp in Sources */,
+				A3B1B87A1AAA60DC001BD9D9 /* game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B1B86D1AAA600D001BD9D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B1B8741AAA600D001BD9D9 /* main.cpp in Sources */,
+				A3B1B8831AAA6FD5001BD9D9 /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +195,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -169,7 +235,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -213,6 +279,26 @@
 			};
 			name = Release;
 		};
+		A3B1B8761AAA600D001BD9D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3B1B8771AAA600D001BD9D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -230,6 +316,14 @@
 			buildConfigurations = (
 				A3B1B86B1AAA4C3B001BD9D9 /* Debug */,
 				A3B1B86C1AAA4C3B001BD9D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3B1B8751AAA600D001BD9D9 /* Build configuration list for PBXNativeTarget "battleship-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B1B8761AAA600D001BD9D9 /* Debug */,
+				A3B1B8771AAA600D001BD9D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
