@@ -13,7 +13,7 @@ Ship::Ship(): _size(0), _classification("")
   
 }
 
-Ship::Ship(int size): _size(size)
+Ship::Ship(std::string classification, int size): _size(size), _classification(classification)
 {
   
 }

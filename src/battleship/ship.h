@@ -15,7 +15,7 @@ class Ship
 {
 public:
   Ship();
-  Ship(int);
+  Ship(std::string, int);
   
   ~Ship() = default;
   
