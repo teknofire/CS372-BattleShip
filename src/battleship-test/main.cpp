@@ -38,3 +38,11 @@ TEST_CASE( "Ships can be defined!", "[ship]" )
   }
   
 }
+
+TEST_CASE( "Fleets can be setup", "[fleet]" )
+{
+  SECTION( "Default constructor" )
+  {
+    Fleet fleet;
+  }
+}
