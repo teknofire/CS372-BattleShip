@@ -7,3 +7,18 @@
 //
 
 #include "ship.h"
+
+Ship::Ship(): _size(0)
+{
+  
+}
+
+Ship::Ship(int size): _size(size)
+{
+  
+}
+
+int Ship::size()
+{
+  return _size;
+}

@@ -9,6 +9,18 @@
 #ifndef __battleship__ship__
 #define __battleship__ship__
 
-#include <stdio.h>
+class Ship
+{
+public:
+  Ship();
+  Ship(int);
+  
+  ~Ship() = default;
+  
+  int size();
+  
+private:
+  int _size;
+};
 
 #endif /* defined(__battleship__ship__) */
