@@ -9,14 +9,19 @@
 #ifndef __battleship__fleet__
 #define __battleship__fleet__
 
+#include <vector>
+#include "ship.h"
+
 class Fleet
 {
 public:
   Fleet();
   ~Fleet() = default;
   
-private:
+  std::vector<Ship>::size_type size();
   
+private:
+  std::vector<Ship> _ships;
 };
 
 #endif /* defined(__battleship__fleet__) */

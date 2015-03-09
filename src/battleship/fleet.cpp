@@ -8,7 +8,12 @@
 
 #include "fleet.h"
 
-Fleet::Fleet()
+Fleet::Fleet(): _ships{ { "Carrier", 5 }, { "Battleship", 4 }, { "Submarine", 3 }, { "Destroyer", 3 }, { "Patrol boat", 2 } }
 {
   
+}
+
+std::vector<Ship>::size_type Fleet::size()
+{
+  return _ships.size();
 }

@@ -45,5 +45,10 @@ TEST_CASE( "Fleets can be setup", "[fleet]" )
   SECTION( "Default constructor" )
   {
     Fleet fleet;
+    
+    SECTION( "Should have 5 ships by default" )
+    {
+      REQUIRE( fleet.size() == 5 );
+    }
   }
 }
