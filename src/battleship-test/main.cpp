@@ -29,4 +29,11 @@ TEST_CASE( "Ships can be defined!", "[ship]" )
     REQUIRE( ship.size() == 5 );
   }
   
+  SECTION( "should have no classification by default" )
+  {
+    Ship ship;
+    
+    REQUIRE( ship.classification() == "" );
+  }
+  
 }

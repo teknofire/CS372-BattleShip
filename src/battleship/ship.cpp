@@ -8,7 +8,7 @@
 
 #include "ship.h"
 
-Ship::Ship(): _size(0)
+Ship::Ship(): _size(0), _classification("")
 {
   
 }
@@ -21,4 +21,9 @@ Ship::Ship(int size): _size(size)
 int Ship::size()
 {
   return _size;
+}
+
+std::string Ship::classification()
+{
+  return _classification;
 }
