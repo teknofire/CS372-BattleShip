@@ -13,6 +13,12 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 
-TEST_CASE( "Ships" ) {
+TEST_CASE( "Ships can be defined!", "[ship]" ) {
+  Ship ship;
+  
+  SECTION( "ships have default size of 0" ) {
+    
+    REQUIRE( ship.size() == 0 );
+  }
   
 }
