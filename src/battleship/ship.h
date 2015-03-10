@@ -9,18 +9,22 @@
 #ifndef __battleship__ship__
 #define __battleship__ship__
 
+#include <string>
+
 class Ship
 {
 public:
   Ship();
-  Ship(int);
+  Ship(std::string, int);
   
   ~Ship() = default;
   
   int size();
+  std::string classification();
   
 private:
   int _size;
+  std::string _classification;
 };
 
 #endif /* defined(__battleship__ship__) */

@@ -15,18 +15,26 @@
 
 TEST_CASE( "Ships can be defined!", "[ship]" )
 {
-  SECTION( "ships have default size of 0" )
+  SECTION( "Default constructor" )
   {
     Ship ship;
     
-    REQUIRE( ship.size() == 0 );
+    SECTION( "ships have default size of 0" )
+    {
+      REQUIRE( ship.size() == 0 );
+    }
+    SECTION( "should have no classification by default" )
+    {
+      REQUIRE( ship.classification() == "" );
+    }
   }
   
-  SECTION( "should be able to initialize a ship with a size" )
+  SECTION( "should be able to initialize a ship with a class and size" )
   {
-    Ship ship(5);
+    Ship ship("Carrier", 5);
     
     REQUIRE( ship.size() == 5 );
+    REQUIRE( ship.classification() == "Carrier" );
   }
   
 }
