@@ -13,6 +13,8 @@
 		A3B1B8831AAA6FD5001BD9D9 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3B1B8781AAA60DC001BD9D9 /* game.cpp */; };
 		A3DC90411AAE4BA8003C19BD /* ship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3DC903F1AAE4BA8003C19BD /* ship.cpp */; };
 		A3DC90421AAE4BB0003C19BD /* ship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3DC903F1AAE4BA8003C19BD /* ship.cpp */; };
+		A3DC90451AAE52A0003C19BD /* fleet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3DC90431AAE52A0003C19BD /* fleet.cpp */; };
+		A3DC90461AAE52A0003C19BD /* fleet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3DC90431AAE52A0003C19BD /* fleet.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +48,8 @@
 		A3DC903E1AAE4B33003C19BD /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
 		A3DC903F1AAE4BA8003C19BD /* ship.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ship.cpp; sourceTree = "<group>"; };
 		A3DC90401AAE4BA8003C19BD /* ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ship.h; sourceTree = "<group>"; };
+		A3DC90431AAE52A0003C19BD /* fleet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fleet.cpp; path = battleship/fleet.cpp; sourceTree = SOURCE_ROOT; };
+		A3DC90441AAE52A0003C19BD /* fleet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fleet.h; path = battleship/fleet.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 			children = (
 				A3B1B8661AAA4C3B001BD9D9 /* main.cpp */,
 				A3DC903F1AAE4BA8003C19BD /* ship.cpp */,
+				A3DC90431AAE52A0003C19BD /* fleet.cpp */,
+				A3DC90441AAE52A0003C19BD /* fleet.h */,
 				A3DC90401AAE4BA8003C19BD /* ship.h */,
 				A3B1B8781AAA60DC001BD9D9 /* game.cpp */,
 				A3B1B8791AAA60DC001BD9D9 /* game.h */,
@@ -184,6 +190,7 @@
 			files = (
 				A3B1B8671AAA4C3B001BD9D9 /* main.cpp in Sources */,
 				A3B1B87A1AAA60DC001BD9D9 /* game.cpp in Sources */,
+				A3DC90451AAE52A0003C19BD /* fleet.cpp in Sources */,
 				A3DC90411AAE4BA8003C19BD /* ship.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +201,7 @@
 			files = (
 				A3B1B8741AAA600D001BD9D9 /* main.cpp in Sources */,
 				A3B1B8831AAA6FD5001BD9D9 /* game.cpp in Sources */,
+				A3DC90461AAE52A0003C19BD /* fleet.cpp in Sources */,
 				A3DC90421AAE4BB0003C19BD /* ship.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

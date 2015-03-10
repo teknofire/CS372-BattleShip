@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "ship.h"
+#include "fleet.h"
 //#include "game.h"
 
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
@@ -37,4 +38,17 @@ TEST_CASE( "Ships can be defined!", "[ship]" )
     REQUIRE( ship.classification() == "Carrier" );
   }
   
+}
+
+TEST_CASE( "Fleets can be setup", "[fleet]" )
+{
+  SECTION( "Default constructor" )
+  {
+    Fleet fleet;
+    
+    SECTION( "Should have 5 ships by default" )
+    {
+      REQUIRE( fleet.size() == 5 );
+    }
+  }
 }
