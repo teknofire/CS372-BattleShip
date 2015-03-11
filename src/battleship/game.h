@@ -10,14 +10,19 @@
 #define __battleship__game__
 
 #include <string>
+#include "player.h"
 
 class Game
 {
 public:
-  
-  std::string status();
-  
+  Game();
+  ~Game() = default;
+  void setPlayer1(std::string);
+  void setPlayer2(std::string);
+  Player & getPlayer(int);
 private:
+  Player _player1;
+  Player _player2;
   
 };
 

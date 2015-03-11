@@ -9,8 +9,8 @@
 #include <iostream>
 #include "ship.h"
 #include "fleet.h"
-//#include "game.h"
 #include "player.h"
+#include "game.h"
 
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
@@ -71,12 +71,20 @@ TEST_CASE( "Fleets can be setup", "[fleet]" )
     REQUIRE( fleet.size() == 5 );
   }
 }
+
+TEST_CASE( "Game setup", "[game setup]" )
+{
+  SECTION( "Should set player names" )
   {
-    Fleet fleet;
+    Game game;
     
-    SECTION( "Should have 5 ships by default" )
-    {
-      REQUIRE( fleet.size() == 5 );
-    }
+    game.setPlayer1("Wombat Player");
+    
+    REQUIRE( game.getPlayer(1).getName() == "Wombat Player" );
+   
+    game.setPlayer2("Dingbat Player");
+    
+    REQUIRE( game.getPlayer(2).getName() == "Dingbat Player" );
   }
 }
+

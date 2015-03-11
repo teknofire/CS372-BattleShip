@@ -8,7 +8,24 @@
 
 #include "game.h"
 
-std::string Game::status()
+Game::Game(): _player1(), _player2()
+{}
+
+void Game::setPlayer1(std::string name)
 {
-  return "Nope";
+  _player1.setName(name);
+}
+
+
+void Game::setPlayer2(std::string name)
+{
+  _player2.setName(name);
+}
+
+Player & Game::getPlayer(int playerID)
+{
+  if(playerID == 1)
+    return _player1;
+  
+  return _player2;
 }
