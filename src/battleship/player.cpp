@@ -6,18 +6,18 @@
 
 #include "player.h"
 
-Player::Player() : _playerName("Default Player")
+Player::Player() : _name("Default Player")
 {}
 
-Player::Player(std:string player) : _playerName(player)
+Player::Player(std::string player) : _name(player)
 {}
 
-std::string Player::getPlayerName()
+std::string Player::getName()
 {
-	return _playerName
+  return _name;
 }
 
-void Player::setPlayerName(std::string newPlayerName)
+void Player::setName(std::string name)
 {
-	_playerName = newPlayerName;
+	_name = name;
 }

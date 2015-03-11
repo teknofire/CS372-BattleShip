@@ -16,15 +16,15 @@ class Player
 {
 public:
 	Player();
-	Player(std::string)
+  Player(std::string);
 	~Player() = default;
 	
-	std::string getPlayerName();
-	void setPlayerName(std::string);
+	std::string getName();
+	void setName(std::string);
 
 
 private:
-	std::string _playerName;
+	std::string _name;
 };
 
 #endif /* defined(__battleship__player__) */
