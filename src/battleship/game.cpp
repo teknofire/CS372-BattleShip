@@ -11,16 +11,11 @@
 Game::Game(): _player1(), _player2()
 {}
 
-void Game::setPlayer1(std::string name)
+void Game::setPlayer(int playerID, std::string name)
 {
-  _player1.setName(name);
+  getPlayer(playerID).setName(name);
 }
 
-
-void Game::setPlayer2(std::string name)
-{
-  _player2.setName(name);
-}
 
 Player & Game::getPlayer(int playerID)
 {
@@ -42,8 +37,16 @@ Fleet & Game::getPlayerFleet(int playerID)
 
 void Game::startSetup()
 {
+  std::string name;
+  
   for (int ii=1; ii <= 2; ++ii)
   {
-    std::cout << "Player " << ii << ", please enter your name" << std::endl;    
+    std::cout << "Player " << ii << ", please enter your name" << std::endl;
+    
+    std::cin >> name;
+    
+    setPlayer(ii, name);
+    
+    std::cout << "Welcome " + getPlayerName(ii) << std::endl;
   }
 }

@@ -19,8 +19,7 @@ public:
   Game();
   ~Game() = default;
   
-  void setPlayer1(std::string);
-  void setPlayer2(std::string);
+  void setPlayer(int, std::string);
   Player & getPlayer(int);
   std::string getPlayerName(int);
   Fleet & getPlayerFleet(int);

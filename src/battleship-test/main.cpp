@@ -80,11 +80,9 @@ TEST_CASE( "Game setup", "[game setup]" )
   Game game;
   SECTION( "Should set player names" )
   {
-    game.setPlayer1("Player 1");
-    game.setPlayer2("Player 2");
-    
     for( int ii = 1; ii <= 2; ++ii)
     {
+      game.setPlayer(ii, "Player " + std::to_string(ii));
       REQUIRE( game.getPlayerName(ii) == "Player " + std::to_string(ii) );
     }
   }
