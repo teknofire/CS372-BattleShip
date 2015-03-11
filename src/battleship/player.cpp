@@ -6,10 +6,10 @@
 
 #include "player.h"
 
-Player::Player() : _name("Default Player")
+Player::Player() : _name("Default Player"), _fleet()
 {}
 
-Player::Player(std::string player) : _name(player)
+Player::Player(std::string player) : _name(player), _fleet()
 {}
 
 std::string Player::getName()
@@ -20,4 +20,9 @@ std::string Player::getName()
 void Player::setName(std::string name)
 {
 	_name = name;
+}
+
+Fleet & Player::getFleet()
+{
+  return _fleet;
 }
