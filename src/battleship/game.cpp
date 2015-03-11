@@ -29,3 +29,21 @@ Player & Game::getPlayer(int playerID)
   
   return _player2;
 }
+
+std::string Game::getPlayerName(int playerID)
+{
+  return getPlayer(playerID).getName();
+}
+
+Fleet & Game::getPlayerFleet(int playerID)
+{
+  return getPlayer(playerID).getFleet();
+}
+
+void Game::startSetup()
+{
+  for (int ii=1; ii <= 2; ++ii)
+  {
+    std::cout << "Player " << ii << ", please enter your name" << std::endl;    
+  }
+}

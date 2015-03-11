@@ -26,6 +26,7 @@ TEST_CASE( "Players can be defined!", "[player]")
     player.setName("Wombat Player");
     
     REQUIRE( player.getName() == "Wombat Player" );
+    REQUIRE( player.getFleet().size() == 5);
   }
   
   SECTION( "constructor with name" )
@@ -34,6 +35,8 @@ TEST_CASE( "Players can be defined!", "[player]")
     
     REQUIRE( player.getName() == "Player 1" );
   }
+  
+  
 }
 
 TEST_CASE( "Ships can be defined!", "[ship]" )
@@ -74,17 +77,25 @@ TEST_CASE( "Fleets can be setup", "[fleet]" )
 
 TEST_CASE( "Game setup", "[game setup]" )
 {
+  Game game;
   SECTION( "Should set player names" )
   {
-    Game game;
+    game.setPlayer1("Player 1");
+    game.setPlayer2("Player 2");
     
-    game.setPlayer1("Wombat Player");
-    
-    REQUIRE( game.getPlayer(1).getName() == "Wombat Player" );
-   
-    game.setPlayer2("Dingbat Player");
-    
-    REQUIRE( game.getPlayer(2).getName() == "Dingbat Player" );
+    for( int ii = 1; ii <= 2; ++ii)
+    {
+      REQUIRE( game.getPlayerName(ii) == "Player " + std::to_string(ii) );
+    }
   }
+
+  SECTION("Players should have a default fleet")
+  {
+    for( int ii = 1; ii <= 2; ++ii)
+    {
+      REQUIRE( game.getPlayerFleet(ii).size() == 5);
+    }
+  }
+
 }
 

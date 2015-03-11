@@ -11,6 +11,7 @@
 #define __battleship__player__
 
 #include <string>
+#include "fleet.h"
 
 class Player
 {
@@ -21,10 +22,11 @@ public:
 	
 	std::string getName();
 	void setName(std::string);
-
+  Fleet & getFleet();
 
 private:
 	std::string _name;
+  Fleet _fleet;
 };
 
 #endif /* defined(__battleship__player__) */
