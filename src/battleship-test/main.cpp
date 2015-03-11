@@ -64,6 +64,7 @@ TEST_CASE( "Ships can be defined!", "[ship]" )
 
 TEST_CASE( "Fleets can be setup", "[fleet]" )
 {
+  Fleet fleet;
   
   SECTION( "Should have 5 ships by default" )
   {
