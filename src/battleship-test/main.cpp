@@ -10,9 +10,31 @@
 #include "ship.h"
 #include "fleet.h"
 //#include "game.h"
+#include "player.h"
 
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
+
+TEST_CASE( "Players can be defined!", "[player]")
+{
+  SECTION( "default constructor" )
+  {
+    Player player;
+    
+    REQUIRE( player.getName() == "Default Player" );
+    
+    player.setName("Wombat Player");
+    
+    REQUIRE( player.getName() == "Wombat Player" );
+  }
+  
+  SECTION( "constructor with name" )
+  {
+    Player player("Player 1");
+    
+    REQUIRE( player.getName() == "Player 1" );
+  }
+}
 
 TEST_CASE( "Ships can be defined!", "[ship]" )
 {
@@ -42,7 +64,12 @@ TEST_CASE( "Ships can be defined!", "[ship]" )
 
 TEST_CASE( "Fleets can be setup", "[fleet]" )
 {
-  SECTION( "Default constructor" )
+  
+  SECTION( "Should have 5 ships by default" )
+  {
+    REQUIRE( fleet.size() == 5 );
+  }
+}
   {
     Fleet fleet;
     
