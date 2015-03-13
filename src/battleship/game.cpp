@@ -60,6 +60,6 @@ void Game::setupFleet(int playerID)
 {
   for (auto ship:getPlayerFleet(playerID))
   {
-    
+    std::cout << std::endl << "Where do you want to place your " << ship.classification() << "? ";
   }
 }

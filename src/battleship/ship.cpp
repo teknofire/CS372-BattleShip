@@ -28,7 +28,17 @@ std::string Ship::classification()
   return _classification;
 }
 
-void Ship::setClassification(const std::string classification)
+void Ship::setClassification(const std::string &classification)
 {
   _classification = classification;
+}
+
+void Ship::setLocation(const std::string &location)
+{
+  _location = location;
+}
+
+std::string Ship::location()
+{
+  return _location;
 }
