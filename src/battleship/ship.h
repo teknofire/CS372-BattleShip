@@ -21,6 +21,7 @@ public:
   
   int size();
   std::string classification();
+  void setClassification(const std::string);
   
 private:
   int _size;

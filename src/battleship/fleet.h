@@ -19,7 +19,9 @@ public:
   ~Fleet() = default;
   
   std::vector<Ship>::size_type size();
-  
+  std::vector<Ship>::iterator begin();
+  std::vector<Ship>::iterator end();
+  Ship * operator[](const int);
 private:
   std::vector<Ship> _ships;
 };

@@ -41,12 +41,25 @@ void Game::startSetup()
   
   for (int ii=1; ii <= 2; ++ii)
   {
-    std::cout << "Player " << ii << ", please enter your name" << std::endl;
+    setupPlayer(ii);
+    setupFleet(ii);
+  }
+}
+
+void Game::setupPlayer(int playerID)
+{
+  std::string name;
+  
+  std::cout << std::endl << "Player " << playerID << ", please enter your name: ";
+  getline(std::cin, name);
+  setPlayer(playerID, name);
+  std::cout << "Welcome " + getPlayerName(playerID) << std::endl;
+}
+
+void Game::setupFleet(int playerID)
+{
+  for (auto ship:getPlayerFleet(playerID))
+  {
     
-    std::cin >> name;
-    
-    setPlayer(ii, name);
-    
-    std::cout << "Welcome " + getPlayerName(ii) << std::endl;
   }
 }
