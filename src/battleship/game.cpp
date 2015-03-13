@@ -58,12 +58,19 @@ void Game::setupPlayer(int playerID)
 
 void Game::setupFleet(int playerID)
 {
+  std::cout << std::endl << "Setup ship locations" << std::endl;
+
   for (auto ship:getPlayerFleet(playerID))
   {
     std::string location;
     
-    std::cout << std::endl << "Where do you want to place your " << ship.classification() << "? ";
-    getline(std::cin, location);
-    ship.setLocation(location);
+    while(location.length() == 0)
+    {
+      std::cout << "Where do you want to place your " << ship.classification() << "? ";
+      getline(std::cin, location);
+      if (location.length() == 0)
+        std::cout << "Invalid location, please try again..." << std::endl;
+      ship.setLocation(location);
+    }
   }
 }
