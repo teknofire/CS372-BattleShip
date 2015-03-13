@@ -27,3 +27,8 @@ std::string Ship::classification()
 {
   return _classification;
 }
+
+void Ship::setClassification(const std::string classification)
+{
+  _classification = classification;
+}

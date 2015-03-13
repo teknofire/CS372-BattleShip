@@ -61,6 +61,10 @@ TEST_CASE( "Ships can be defined!", "[ship]" )
     
     REQUIRE( ship.size() == 5 );
     REQUIRE( ship.classification() == "Carrier" );
+    
+    ship.setClassification("test ship");
+    REQUIRE( ship.classification() == "test ship" );
+    
   }
   
 }
@@ -72,6 +76,18 @@ TEST_CASE( "Fleets can be setup", "[fleet]" )
   SECTION( "Should have 5 ships by default" )
   {
     REQUIRE( fleet.size() == 5 );
+    REQUIRE( fleet[0]->classification() == "Carrier" );
+    REQUIRE( fleet[1]->classification() == "Battleship" );
+    REQUIRE( fleet[2]->classification() == "Submarine" );
+    REQUIRE( fleet[3]->classification() == "Destroyer" );
+    REQUIRE( fleet[4]->classification() == "Patrol boat" );
+    REQUIRE( fleet.begin()->classification() == fleet[0]->classification() );
+    
+    SECTION( "Should be able to change the ship classfication from fleet")
+    {
+      fleet[0]->setClassification("test ship");
+      REQUIRE( fleet[0]->classification() == "test ship" );
+    }
   }
 }
 

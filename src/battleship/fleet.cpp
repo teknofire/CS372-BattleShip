@@ -17,3 +17,17 @@ std::vector<Ship>::size_type Fleet::size()
 {
   return _ships.size();
 }
+
+std::vector<Ship>::iterator Fleet::begin()
+{
+  return _ships.begin();
+}
+std::vector<Ship>::iterator Fleet::end()
+{
+  return _ships.end();
+}
+
+Ship * Fleet::operator[](const int index)
+{
+  return &_ships[index];
+}

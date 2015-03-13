@@ -25,6 +25,8 @@ public:
   Fleet & getPlayerFleet(int);
   
   void startSetup();
+  void setupPlayer(int);
+  void setupFleet(int);
 private:
   Player _player1;
   Player _player2;
