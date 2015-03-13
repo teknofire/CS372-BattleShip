@@ -21,11 +21,14 @@ public:
   
   int size();
   std::string classification();
-  void setClassification(const std::string);
+  void setClassification(const std::string &);
+  void setLocation(const std::string &);
+  std::string location();
   
 private:
   int _size;
   std::string _classification;
+  std::string _location;
 };
 
 #endif /* defined(__battleship__ship__) */

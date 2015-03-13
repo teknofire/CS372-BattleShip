@@ -65,6 +65,12 @@ TEST_CASE( "Ships can be defined!", "[ship]" )
     ship.setClassification("test ship");
     REQUIRE( ship.classification() == "test ship" );
     
+    SECTION( "Should be able to set the location for a ship" )
+    {
+      ship.setLocation("A7");
+      REQUIRE( ship.location() == "A7" );
+    }
+    
   }
   
 }
