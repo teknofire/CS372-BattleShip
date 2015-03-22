@@ -66,6 +66,7 @@ void Game::setupFleet(int playerID)
     
     while(location.length() == 0)
     {
+      printMyBoard(playerID);
       std::cout << "Where do you want to place your " << ship.classification() << "? ";
       getline(std::cin, location);
       if (location.length() == 0)
@@ -73,4 +74,33 @@ void Game::setupFleet(int playerID)
       ship.setLocation(location);
     }
   }
+}
+
+void Game::printMyBoard(int playerID)
+{
+  for(auto yy=20; yy > 0; --yy)
+  {
+    std::cout << std::setw(4) << yy << " |";
+    for(auto xx=0; xx < 20; ++xx)
+    {
+      std::cout << std::setw(3) << ".";
+    }
+    std::cout << std::endl;
+  }
+  
+  std::cout << std::setw(4) << "      ";
+  for(auto xx=0; xx < 20; ++xx)
+  {
+    std::cout << "---";
+  }
+  
+  std::cout << std::endl;
+  std::cout << std::setw(4) << "      ";
+  
+  for(auto xx=0; xx < 20; ++xx)
+  {
+    char asciiChar = xx + 97;
+    std::cout << std::setw(3) << asciiChar;
+  }
+  std::cout << std::endl;
 }

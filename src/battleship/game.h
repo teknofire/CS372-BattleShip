@@ -11,6 +11,7 @@
 
 #include <string>
 #include <iostream>
+#include <iomanip>
 #include "player.h"
 
 class Game
@@ -27,6 +28,9 @@ public:
   void startSetup();
   void setupPlayer(int);
   void setupFleet(int);
+  
+  void printMyBoard(int);
+  
 private:
   Player _player1;
   Player _player2;
