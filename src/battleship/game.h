@@ -31,9 +31,13 @@ public:
   
   void printMyBoard(int);
   
+  int getBoardSize();
+  
 private:
   Player _player1;
   Player _player2;
+  
+  int _boardSize;
   
 };
 

@@ -110,6 +110,12 @@ TEST_CASE( "Fleets can be setup", "[fleet]" )
 TEST_CASE( "Game setup", "[game setup]" )
 {
   Game game;
+  
+  SECTION( "By default boards should be 10x10" )
+  {
+    REQUIRE( game.getBoardSize() == 10 );
+  }
+  
   SECTION( "Should set player names" )
   {
     for( int ii = 1; ii <= 2; ++ii)

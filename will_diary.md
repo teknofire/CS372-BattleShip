@@ -8,16 +8,22 @@ Meet with Dylan to get work on getting build environment setup and work out how 
 
 ### 1 hour (class time)
 
-Worked on getting basic ship and fleet 
+Worked on getting basic ship and fleet
 
 ## 2015-03-11
 
 ### 1 hour (class time)
 
-Dylan and I worked on integrating his player class into the code and getting the basic game setup loop working.
+Dylan and I worked on integrating his player class into the code and getting the basic game setup loop working. This was a good first run through with the pair programming to help make sure we were both on same style of coding.  Did slow things down a bit but not too much.
 
 ## 2015-03-13
 
 ### 1 hour (class time)
 
 Working on the story #20 and game setup interface
+
+## 2015-03-21
+
+### 3 hours
+
+Working on the ship orientation #21, printing game boards #38

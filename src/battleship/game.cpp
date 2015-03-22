@@ -8,7 +8,7 @@
 
 #include "game.h"
 
-Game::Game(): _player1(), _player2()
+Game::Game(): _player1(), _player2(), _boardSize(10)
 {}
 
 void Game::setPlayer(int playerID, std::string name)
@@ -78,10 +78,10 @@ void Game::setupFleet(int playerID)
 
 void Game::printMyBoard(int playerID)
 {
-  for(auto yy=20; yy > 0; --yy)
+  for(auto yy=getBoardSize(); yy > 0; --yy)
   {
     std::cout << std::setw(4) << yy << " |";
-    for(auto xx=0; xx < 20; ++xx)
+    for(auto xx=0; xx < getBoardSize(); ++xx)
     {
       std::cout << std::setw(3) << ".";
     }
@@ -89,7 +89,7 @@ void Game::printMyBoard(int playerID)
   }
   
   std::cout << std::setw(4) << "      ";
-  for(auto xx=0; xx < 20; ++xx)
+  for(auto xx=0; xx < getBoardSize(); ++xx)
   {
     std::cout << "---";
   }
@@ -97,10 +97,15 @@ void Game::printMyBoard(int playerID)
   std::cout << std::endl;
   std::cout << std::setw(4) << "      ";
   
-  for(auto xx=0; xx < 20; ++xx)
+  for(auto xx=0; xx < getBoardSize(); ++xx)
   {
     char asciiChar = xx + 97;
     std::cout << std::setw(3) << asciiChar;
   }
-  std::cout << std::endl;
+  std::cout << std::endl << std::endl;
+}
+
+int Game::getBoardSize()
+{
+  return _boardSize;
 }
