@@ -42,3 +42,13 @@ std::string Ship::location()
 {
   return _location;
 }
+
+void Ship::setOrientation(const std::string & orientation)
+{
+  _orientation = orientation;
+}
+
+std::string Ship::orientation()
+{
+  return _orientation;
+}

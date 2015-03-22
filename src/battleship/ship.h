@@ -25,10 +25,14 @@ public:
   void setLocation(const std::string &);
   std::string location();
   
+  void setOrientation(const std::string &);
+  std::string orientation();
+  
 private:
   int _size;
   std::string _classification;
   std::string _location;
+  std::string _orientation;
 };
 
 #endif /* defined(__battleship__ship__) */

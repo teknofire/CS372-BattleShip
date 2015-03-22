@@ -70,7 +70,17 @@ TEST_CASE( "Ships can be defined!", "[ship]" )
       ship.setLocation("A7");
       REQUIRE( ship.location() == "A7" );
     }
-    
+    SECTION( "Should be able to set the orientation for a ship" )
+    {
+      ship.setOrientation("u");
+      REQUIRE( ship.orientation() == "u" );
+      ship.setOrientation("d");
+      REQUIRE( ship.orientation() == "d" );
+      ship.setOrientation("l");
+      REQUIRE( ship.orientation() == "l" );
+      ship.setOrientation("r");
+      REQUIRE( ship.orientation() == "r" );
+    }
   }
   
 }
