@@ -20,7 +20,7 @@ Dylan and I worked on integrating his player class into the code and getting the
 
 ### 1 hour (class time)
 
-Working on the story #20 and game setup interface
+Working on the story #20 and game setup interface.  Definately a challenge to figure out ways to build the interface in a way that is somewhat testable.
 
 ## 2015-03-21
 
