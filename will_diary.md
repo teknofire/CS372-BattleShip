@@ -27,3 +27,10 @@ Working on the story #20 and game setup interface.  Definately a challenge to fi
 ### 4 hours
 
 Working on the ship orientation #21, printing game boards #38, also worked on setting default board size for printing purposes.
+
+
+## 2015-03-23
+
+### 1 hour
+
+Dylan and I got together to go over the presentation and integrate diary files.  
