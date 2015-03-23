@@ -8,7 +8,7 @@ Meet with Dylan to get work on getting build environment setup and work out how 
 
 ### 1 hour (class time)
 
-Worked on getting basic ship and fleet
+Worked on getting basic ship and fleet defined.
 
 ## 2015-03-11
 
