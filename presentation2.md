@@ -33,4 +33,12 @@ Will: "The thought process that goes into figuring out how to write a test is a 
 
 ---
 
+# Tools
+
+**Waffle.io** - very useful tool for creating stories and tracking what is being worked on especially with the direct integration with the github.com repository.
+
+**Github.com** - not sure how it happened but we ran into a weird issue with a merge that had gone bad or something but I had to re-checkout all my code from scratch
+
+---
+
 # Demo
