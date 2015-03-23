@@ -24,6 +24,6 @@ Working on the story #20 and game setup interface
 
 ## 2015-03-21
 
-### 3 hours
+### 4 hours
 
-Working on the ship orientation #21, printing game boards #38
+Working on the ship orientation #21, printing game boards #38, also worked on setting default board size for printing purposes.
